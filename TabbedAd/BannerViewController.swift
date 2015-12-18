@@ -44,7 +44,7 @@ class BannerViewController: UIViewController {
         bannerFrame.size = bannerView.sizeThatFits(contentFrame.size)
         
         if bannerView.bannerLoaded {
-            contentFrame.size.height -= bannerFrame.size.height
+            contentFrame.size.height -= (bannerFrame.size.height + contentController.tabBarController!.tabBar.frame.height)
             bannerFrame.origin.y = contentFrame.size.height
         } else {
             bannerFrame.origin.y = contentFrame.size.height

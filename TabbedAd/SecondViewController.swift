@@ -14,6 +14,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Second View Controller"
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionWillBegin", name: BannerViewActionWillBegin, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionDidFinish", name: BannerViewActionDidFinish, object: nil)
     }
 
     override func didReceiveMemoryWarning() {

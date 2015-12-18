@@ -93,7 +93,6 @@
         <!--Navigation Controller-->
         <scene sceneID="6oE-7C-R5v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ham-0U-lXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vzp-rr-W6w" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" selectedImage="first" systemItem="mostRecent" id="s8Z-eJ-iNm"/>
                     <toolbarItems/>
@@ -106,6 +105,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="O87-9y-1nu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ham-0U-lXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-338"/>
         </scene>
@@ -113,6 +113,10 @@
         <scene sceneID="eD5-2t-f26">
             <objects>
                 <viewController id="uDt-iF-yXr" customClass="FirstViewController" customModule="TabbedAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oeZ-Fe-cE0"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFH-w0-vlV"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8rj-4j-Yiq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,8 +183,11 @@
         <!--Second View Controller-->
         <scene sceneID="93Z-pH-oml">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dGv-7c-E0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="w7C-ow-z9r" customClass="SecondViewController" customModule="TabbedAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m4Y-lX-U5k"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjS-KT-oW5"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bt7-iD-uNJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +236,7 @@
                         </variation>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGv-7c-E0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2510" y="350.5"/>
         </scene>

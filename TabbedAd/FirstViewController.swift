@@ -11,7 +11,9 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    private var products = ["iPhone", "iPad", "iPod", "MacBook Pro", "iMac", "Macbook Air", "Mac Pro", "iPad Pro"]
+    private var products = [
+        "iPhone", "iPad", "iPod", "MacBook Pro", "iMac", "Macbook Air", "Mac Pro", "iPad Pro", "Mac TV", "hello", "world", "etc", ",,,"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +22,11 @@ class FirstViewController: UIViewController {
         tableView.delegate = self
         
         title = "First View Controller"
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionWillBegin", name: BannerViewActionWillBegin, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionDidFinish", name: BannerViewActionDidFinish, object: nil)
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: BannerViewActionWillBegin, object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: BannerViewActionDidFinish, object: nil)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
