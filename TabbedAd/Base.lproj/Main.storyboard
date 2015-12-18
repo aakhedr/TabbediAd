@@ -8,7 +8,7 @@
         <!--Banner View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="9pv-A4-QxB" customClass="BannerViewController" customModule="TabbedAd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="BannerViewController" customModule="TabbedAd" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVA-s7-uBJ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="uDt-iF-yXr" kind="embed" id="Zjl-lA-gI4"/>
                                 </connections>
@@ -26,10 +26,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vVA-s7-uBJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="1EK-RT-z5W"/>
-                            <constraint firstItem="vVA-s7-uBJ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="W7P-X3-Pwr"/>
-                            <constraint firstAttribute="trailing" secondItem="vVA-s7-uBJ" secondAttribute="trailing" id="oIH-mv-Vdf"/>
-                            <constraint firstItem="vVA-s7-uBJ" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="p1j-48-KvM"/>
+                            <constraint firstAttribute="bottom" secondItem="vVA-s7-uBJ" secondAttribute="bottom" id="JkM-WK-ACI"/>
+                            <constraint firstItem="vVA-s7-uBJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cyr-IK-3Rh"/>
+                            <constraint firstItem="vVA-s7-uBJ" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="iqO-Hb-562"/>
+                            <constraint firstAttribute="trailing" secondItem="vVA-s7-uBJ" secondAttribute="trailing" id="kpo-fF-SM5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eqe-ne-Xes"/>
@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayG-Id-DGW">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="w7C-ow-z9r" kind="embed" id="h1L-ns-5cT"/>
                                 </connections>
@@ -59,10 +59,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ayG-Id-DGW" secondAttribute="trailing" id="gZr-FS-HTA"/>
-                            <constraint firstItem="ayG-Id-DGW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="iAJ-1K-mJs"/>
-                            <constraint firstItem="ayG-Id-DGW" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="lib-Ub-vWe"/>
-                            <constraint firstItem="ayG-Id-DGW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="twH-Cg-av4"/>
+                            <constraint firstItem="ayG-Id-DGW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="1yB-mm-FYr"/>
+                            <constraint firstAttribute="bottom" secondItem="ayG-Id-DGW" secondAttribute="bottom" id="Osn-lZ-nKx"/>
+                            <constraint firstItem="ayG-Id-DGW" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="hOO-Gv-xh6"/>
+                            <constraint firstAttribute="trailing" secondItem="ayG-Id-DGW" secondAttribute="trailing" id="nxC-MQ-ei8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CmI-bB-131"/>
@@ -118,11 +118,11 @@
                         <viewControllerLayoutGuide type="bottom" id="dFH-w0-vlV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8rj-4j-Yiq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-8G-00n">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" textLabel="t6a-YP-VdJ" style="IBUITableViewCellStyleDefault" id="Yc6-wd-aK3">
@@ -189,11 +189,11 @@
                         <viewControllerLayoutGuide type="bottom" id="sjS-KT-oW5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bt7-iD-uNJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second tabbed view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb9-5c-3sU">
-                                <rect key="frame" x="222" y="233.5" width="156" height="20.5"/>
+                                <rect key="frame" x="222" y="290" width="156" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="c9S-4K-lRL"/>
                                 </constraints>
@@ -207,7 +207,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by second view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-Lz-25R">
-                                <rect key="frame" x="172" y="262" width="257" height="21"/>
+                                <rect key="frame" x="172" y="318" width="257" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5gR-ys-lwj"/>
                                 </constraints>
