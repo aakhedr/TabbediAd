@@ -12,7 +12,7 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     private var products = [
-        "iPhone", "iPad", "iPod", "MacBook Pro", "iMac", "Macbook Air", "Mac Pro", "iPad Pro", "Mac TV", "hello", "world", "etc", ",,,"
+        "iPhone", "iPad", "iPod", "MacBook Pro", "iMac", "Macbook Air", "Mac Pro", "iPad Pro", "Mac TV", "iPad 2", "iPad mini", "Apple Watch", "Mac mini"
     ]
     
     override func viewDidLoad() {
@@ -23,6 +23,7 @@ class FirstViewController: UIViewController {
         
         title = "First View Controller"
         
+        // NOT IMPLEMENTED
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionWillBegin", name: BannerViewActionWillBegin, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleAdActionDidFinish", name: BannerViewActionDidFinish, object: nil)
     }
